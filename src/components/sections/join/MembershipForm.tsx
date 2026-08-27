@@ -16,7 +16,7 @@ export default function MembershipForm() {
   return (
     <section
       id="membership-form"
-      className="relative overflow-hidden bg-brand-teal px-6 py-24 sm:px-10 lg:px-16"
+      className="relative overflow-hidden bg-brand-teal px-6 py-32 sm:px-10 sm:py-40 lg:px-16"
     >
       <TopLeftCircles light="bg-brand-teal-light" dark="bg-brand-teal-deep" />
 
@@ -28,7 +28,7 @@ export default function MembershipForm() {
             </h2>
           </FadeIn>
           <FadeIn delay={150}>
-            <p className="mt-10 text-lg leading-relaxed text-brand-cream/90">
+            <p className="mt-12 text-lg leading-relaxed text-brand-cream/90">
               Enter your name, email, and phone number, then set up your
               recurring $100 monthly payment. Your membership starts as soon
               as your payment is confirmed. Your next meeting is [date]. You

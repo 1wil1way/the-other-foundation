@@ -1,4 +1,5 @@
 import FadeIn from "../FadeIn";
+import Parallax from "../Parallax";
 
 const STEPS = [
   { number: "1", label: "Applications come in" },
@@ -11,8 +12,12 @@ export default function HowItWorks() {
   return (
     <section className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-brand-coral px-6 pb-48 pt-32 sm:px-10 sm:pb-64 sm:pt-40 lg:px-16">
       <div aria-hidden className="pointer-events-none absolute left-0 top-[62%]">
-        <div className="absolute left-0 top-0 h-[680px] w-[680px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-coral-light" />
-        <div className="absolute left-0 top-0 h-[460px] w-[460px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-coral-deep" />
+        <Parallax speed={0.08} className="absolute left-0 top-0">
+          <div className="h-[680px] w-[680px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-coral-light" />
+        </Parallax>
+        <Parallax speed={0.16} className="absolute left-0 top-0">
+          <div className="h-[460px] w-[460px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-coral-deep" />
+        </Parallax>
       </div>
 
       <div className="relative z-10">

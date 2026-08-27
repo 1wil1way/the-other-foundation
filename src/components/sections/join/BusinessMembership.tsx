@@ -26,7 +26,7 @@ export default function BusinessMembership() {
           </h2>
         </FadeIn>
         <FadeIn delay={150}>
-          <p className="mt-10 text-lg leading-relaxed text-brand-cream/90">
+          <p className="mt-12 text-lg leading-relaxed text-brand-cream/90">
             Your team reads applications from people in your city, votes, and
             decides who gets funded. You see exactly where the money went,
             every month, and you can bring your people to meet the person you

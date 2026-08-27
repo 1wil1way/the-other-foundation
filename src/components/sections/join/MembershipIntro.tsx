@@ -15,7 +15,7 @@ export default function MembershipIntro() {
           </h2>
         </FadeIn>
         <FadeIn delay={150}>
-          <p className="mt-10 max-w-xl text-lg leading-relaxed text-brand-cream/90">
+          <p className="mt-12 max-w-2xl text-lg leading-relaxed text-brand-cream/90">
             $100 a month gets you a vote, a meeting, and a handshake with the
             person you funded. You are expected to read applications and
             vote. If you would rather set up a donation and not think about

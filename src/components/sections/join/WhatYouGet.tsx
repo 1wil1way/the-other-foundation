@@ -17,7 +17,7 @@ export default function WhatYouGet() {
           </h2>
         </FadeIn>
         <FadeIn delay={150}>
-          <p className="mt-10 max-w-xl text-lg leading-relaxed text-brand-cream/90">
+          <p className="mt-12 max-w-2xl text-lg leading-relaxed text-brand-cream/90">
             Your $100 does not disappear into a fund. You read the
             applications, you argue for one, and you shake the winner&apos;s
             hand. You see exactly where the money went every month, not in an
