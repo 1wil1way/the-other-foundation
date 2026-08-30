@@ -46,7 +46,7 @@ export default function WhoCanApply() {
             delay={150}
             className="absolute bottom-0 right-0 h-[240px] w-[240px] overflow-hidden rounded-full border-[16px] border-brand-coral sm:h-[300px] sm:w-[300px]"
           >
-            <PlaceholderPhoto label="Volunteers photo — swap in real asset" />
+            <PlaceholderPhoto label="Photo — swap in real asset" />
           </FadeIn>
         </div>
       </div>
