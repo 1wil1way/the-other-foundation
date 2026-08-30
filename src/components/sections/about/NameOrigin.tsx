@@ -3,7 +3,7 @@ import FadeIn from "../../FadeIn";
 export default function NameOrigin() {
   return (
     <section className="bg-brand-cream px-6 pb-32 pt-40 sm:px-10 sm:pb-44 sm:pt-48 lg:px-16">
-      <div className="mx-auto max-w-3xl">
+      <div className="max-w-3xl">
         <FadeIn>
           <h2 className="font-heading text-4xl font-bold text-brand-teal sm:text-5xl">
             Where the name comes from.
