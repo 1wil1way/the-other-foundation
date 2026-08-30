@@ -1,4 +1,12 @@
 import FadeIn from "../FadeIn";
+import PlaceholderPhoto from "../PlaceholderPhoto";
+
+const AWARDEES = [
+  { name: "Organization Name", date: "Month Year" },
+  { name: "Organization Name", date: "Month Year" },
+  { name: "Organization Name", date: "Month Year" },
+  { name: "Organization Name", date: "Month Year" },
+];
 
 export default function TheOtherAwardees() {
   return (
@@ -11,10 +19,20 @@ export default function TheOtherAwardees() {
         </h2>
       </FadeIn>
 
-      <div className="mt-24 grid grid-cols-2 gap-8 sm:grid-cols-4 sm:gap-10">
-        {Array.from({ length: 4 }).map((_, i) => (
+      <div className="mt-24 grid grid-cols-2 gap-x-8 gap-y-14 sm:grid-cols-4 sm:gap-10">
+        {AWARDEES.map((awardee, i) => (
           <FadeIn key={i} delay={i * 120}>
-            <div className="mx-auto aspect-square w-full max-w-[300px] rounded-full bg-zinc-200" />
+            <div className="flex flex-col items-center gap-4 text-center">
+              <div className="aspect-square w-full max-w-[300px] overflow-hidden rounded-full">
+                <PlaceholderPhoto label="Awardee photo — swap in real asset" />
+              </div>
+              <div>
+                <p className="font-heading text-lg font-semibold text-brand-teal">
+                  {awardee.name}
+                </p>
+                <p className="text-sm text-brand-coral">{awardee.date}</p>
+              </div>
+            </div>
           </FadeIn>
         ))}
       </div>

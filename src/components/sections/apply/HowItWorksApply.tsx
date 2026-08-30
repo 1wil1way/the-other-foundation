@@ -1,4 +1,5 @@
 import FadeIn from "../../FadeIn";
+import PlaceholderPhoto from "../../PlaceholderPhoto";
 
 export default function HowItWorksApply() {
   return (
@@ -7,10 +8,9 @@ export default function HowItWorksApply() {
         aria-hidden
         className="pointer-events-none absolute -right-24 -bottom-24 h-[560px] w-[560px] translate-x-1/4 translate-y-1/4 rounded-full bg-brand-coral sm:h-[680px] sm:w-[680px]"
       />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute right-16 top-20 hidden h-64 w-64 rounded-full bg-brand-cream sm:right-28 sm:block sm:h-80 sm:w-80"
-      />
+      <div className="absolute right-16 top-20 hidden h-64 w-64 overflow-hidden rounded-full sm:right-28 sm:block sm:h-80 sm:w-80">
+        <PlaceholderPhoto label="Photo — swap in real asset" />
+      </div>
 
       <div className="relative z-10 max-w-2xl">
         <FadeIn>
