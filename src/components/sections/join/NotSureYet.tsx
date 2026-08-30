@@ -6,11 +6,11 @@ export default function NotSureYet() {
     <section className="relative overflow-hidden bg-brand-cream px-6 py-24 sm:px-10 lg:px-16">
       <div
         aria-hidden
-        className="pointer-events-none absolute right-0 bottom-0 h-[560px] w-[560px] translate-x-1/3 translate-y-1/3 rounded-full bg-brand-coral"
+        className="pointer-events-none absolute inset-y-0 right-0 w-[85%] max-w-[1100px] translate-x-1/4 rounded-full bg-brand-coral"
       />
 
       <div className="relative z-10 grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
-        <div>
+        <div className="max-w-sm">
           <FadeIn>
             <h2 className="font-heading text-4xl font-bold text-brand-teal sm:text-5xl">
               Not sure yet?
@@ -33,12 +33,14 @@ export default function NotSureYet() {
           </FadeIn>
         </div>
 
-        <FadeIn
-          delay={150}
-          className="relative mx-auto aspect-square w-full max-w-[420px] overflow-hidden rounded-full"
-        >
-          <PlaceholderPhoto label="Meeting photo — swap in real asset" />
-        </FadeIn>
+        <div className="flex justify-center py-8 lg:justify-end">
+          <FadeIn
+            delay={150}
+            className="relative aspect-square w-full max-w-[420px] overflow-hidden rounded-full"
+          >
+            <PlaceholderPhoto label="Meeting photo — swap in real asset" />
+          </FadeIn>
+        </div>
       </div>
     </section>
   );
