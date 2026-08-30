@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://the-other-foundation.vercel.app"),
   title: "The Other Foundation",
   description:
     "Every month, somebody in Birmingham gets funded, and our members decide who.",
