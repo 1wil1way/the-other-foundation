@@ -3,16 +3,16 @@ import FadeIn from "../FadeIn";
 
 const PANELS = [
   {
-    heading: "Individuals and community projects welcome.",
-    button: "Apply for Grant",
-    href: "/apply",
-    photoSrc: "/images/photos/storefront.jpg",
-  },
-  {
     heading: "A vote, a room full of neighbors, a handshake.",
-    button: "Become a Member",
+    button: "Become a member",
     href: "/join",
     photoSrc: "/images/split-left.jpg",
+  },
+  {
+    heading: "Individuals and community projects welcome.",
+    button: "Apply for a grant",
+    href: "/apply",
+    photoSrc: "/images/photos/storefront.jpg",
   },
 ];
 

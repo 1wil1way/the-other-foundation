@@ -1,11 +1,10 @@
 import FadeIn from "../../FadeIn";
 
 const TIPS = [
-  "Tell us who you actually are, not who you think we want to fund.",
-  "Numbers help. A vague ask is a hard yes.",
-  "We fund plans, not wishes — show us the next step, not just the dream.",
-  "Keep it short. Members read every application, every month.",
-  "Show us the people this helps, specifically.",
+  "Be specific.",
+  "Name what the money buys.",
+  "Say who it serves.",
+  "Keep it short.",
 ];
 
 export default function Tips() {
@@ -20,14 +19,8 @@ export default function Tips() {
         <div className="max-w-sm">
           <FadeIn>
             <h2 className="font-heading text-4xl font-bold text-brand-teal sm:text-5xl">
-              Tips for a strong application
+              Tips for a strong application.
             </h2>
-          </FadeIn>
-          <FadeIn delay={150}>
-            <p className="mt-12 text-lg leading-relaxed text-brand-teal/80">
-              A few things we&apos;ve learned from reading hundreds of
-              applications.
-            </p>
           </FadeIn>
         </div>
 

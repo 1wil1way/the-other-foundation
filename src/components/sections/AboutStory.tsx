@@ -19,7 +19,7 @@ export default function AboutStory() {
               href="/about"
               className="mt-10 inline-flex items-center justify-center rounded-full bg-brand-coral px-8 py-4 font-heading font-semibold text-white transition-all hover:scale-[1.02] hover:bg-brand-cream hover:text-brand-coral"
             >
-              Learn more
+              Read the full history on the About page
             </a>
           </FadeIn>
         </div>

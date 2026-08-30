@@ -30,7 +30,7 @@ export default function BusinessMembership() {
             Your team reads applications from people in your city, votes, and
             decides who gets funded. You see exactly where the money went,
             every month, and you can bring your people to meet the person you
-            funded.
+            funded. Membership is still in development.
           </p>
         </FadeIn>
       </div>

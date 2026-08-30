@@ -4,6 +4,7 @@ import WhatYouGet from "@/components/sections/join/WhatYouGet";
 import MembershipForm from "@/components/sections/join/MembershipForm";
 import NotSureYet from "@/components/sections/join/NotSureYet";
 import BusinessMembership from "@/components/sections/join/BusinessMembership";
+import GiveOnce from "@/components/sections/join/GiveOnce";
 
 export const metadata: Metadata = {
   title: "Join — The Other Foundation",
@@ -18,6 +19,7 @@ export default function JoinPage() {
       <MembershipForm />
       <NotSureYet />
       <BusinessMembership />
+      <GiveOnce />
     </div>
   );
 }

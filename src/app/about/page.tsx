@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import NameOrigin from "@/components/sections/about/NameOrigin";
 import HowVotingWorks from "@/components/sections/about/HowVotingWorks";
 import WhoRunsIt from "@/components/sections/about/WhoRunsIt";
+import TheLogo from "@/components/sections/about/TheLogo";
 
 export const metadata: Metadata = {
   title: "About — The Other Foundation",
@@ -14,6 +15,7 @@ export default function AboutPage() {
       <NameOrigin />
       <HowVotingWorks />
       <WhoRunsIt />
+      <TheLogo />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import Hero from "@/components/sections/Hero";
 import HowItWorks from "@/components/sections/HowItWorks";
-import TheOtherAwardees from "@/components/sections/TheOtherAwardees";
+import RecentAwardeesHome from "@/components/sections/RecentAwardeesHome";
 import Quote from "@/components/sections/Quote";
 import WhoCanApply from "@/components/sections/WhoCanApply";
 import AboutStory from "@/components/sections/AboutStory";
@@ -11,7 +11,7 @@ export default function Home() {
     <div className="flex flex-1 flex-col">
       <Hero />
       <HowItWorks />
-      <TheOtherAwardees />
+      <RecentAwardeesHome />
       <WhoCanApply />
       <Quote />
       <AboutStory />
