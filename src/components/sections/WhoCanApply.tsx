@@ -34,19 +34,19 @@ export default function WhoCanApply() {
 
         <div className="relative mx-auto h-[420px] w-full max-w-[520px] sm:h-[520px]">
           <FadeIn className="absolute right-16 top-0 h-[340px] w-[340px] overflow-hidden rounded-full border-[14px] border-brand-cream sm:right-24 sm:h-[400px] sm:w-[400px]">
-            <PlaceholderPhoto label="Family photo — swap in real asset" />
+            <Image
+              src="/images/photos/volunteers.jpg"
+              alt="Volunteers at a community event"
+              fill
+              sizes="(min-width: 640px) 400px, 340px"
+              className="object-cover"
+            />
           </FadeIn>
           <FadeIn
             delay={150}
             className="absolute bottom-0 right-0 h-[240px] w-[240px] overflow-hidden rounded-full border-[16px] border-brand-coral sm:h-[300px] sm:w-[300px]"
           >
-            <Image
-              src="/images/photos/volunteers.jpg"
-              alt="Volunteers at a community event"
-              fill
-              sizes="(min-width: 640px) 300px, 240px"
-              className="object-cover"
-            />
+            <PlaceholderPhoto label="Volunteers photo — swap in real asset" />
           </FadeIn>
         </div>
       </div>
