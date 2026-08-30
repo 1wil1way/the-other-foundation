@@ -28,7 +28,7 @@ export default function Header() {
   return (
     <header
       style={{ opacity, pointerEvents: opacity === 0 ? "none" : "auto" }}
-      className="fixed inset-x-0 top-0 z-50 flex items-center justify-between px-6 py-8 sm:px-10 lg:px-16"
+      className="fixed inset-x-0 top-0 z-50 flex items-center justify-between bg-brand-teal px-6 py-8 sm:px-10 lg:px-16"
     >
       <Link href="/">
         <Logo />
