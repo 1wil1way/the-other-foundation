@@ -6,13 +6,13 @@ const PANELS = [
     heading: "Individuals and community projects welcome.",
     button: "Apply for Grant",
     href: "/apply",
-    photoSrc: "/images/split-left.jpg",
+    photoSrc: "/images/photos/storefront.jpg",
   },
   {
     heading: "A vote, a room full of neighbors, a handshake.",
     button: "Become a Member",
     href: "/join",
-    photoSrc: "/images/split-right.jpg",
+    photoSrc: "/images/split-left.jpg",
   },
 ];
 
