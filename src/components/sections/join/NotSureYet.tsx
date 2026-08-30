@@ -4,11 +4,6 @@ import FadeIn from "../../FadeIn";
 export default function NotSureYet() {
   return (
     <section className="relative overflow-hidden bg-brand-cream px-6 py-24 sm:px-10 lg:px-16">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-y-0 right-0 w-[85%] max-w-[1100px] translate-x-1/4 rounded-full bg-brand-coral"
-      />
-
       <div className="relative z-10 grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
         <div className="max-w-sm">
           <FadeIn>
@@ -33,10 +28,10 @@ export default function NotSureYet() {
           </FadeIn>
         </div>
 
-        <div className="flex justify-center py-8 lg:justify-end">
+        <div className="flex justify-center lg:justify-end lg:pr-8">
           <FadeIn
             delay={150}
-            className="relative aspect-square w-full max-w-[420px] overflow-hidden rounded-full"
+            className="relative aspect-square w-full max-w-[460px] overflow-hidden rounded-full border-[20px] border-brand-coral sm:border-[28px]"
           >
             <PlaceholderPhoto label="Meeting photo — swap in real asset" />
           </FadeIn>
