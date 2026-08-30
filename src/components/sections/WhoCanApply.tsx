@@ -1,5 +1,4 @@
 import Image from "next/image";
-import PlaceholderPhoto from "../PlaceholderPhoto";
 import FadeIn from "../FadeIn";
 import Parallax from "../Parallax";
 
@@ -46,7 +45,13 @@ export default function WhoCanApply() {
             delay={150}
             className="absolute bottom-0 right-0 h-[240px] w-[240px] overflow-hidden rounded-full border-[16px] border-brand-coral sm:h-[300px] sm:w-[300px]"
           >
-            <PlaceholderPhoto label="Photo — swap in real asset" />
+            <Image
+              src="/images/photos/family.webp"
+              alt="Community members together"
+              fill
+              sizes="(min-width: 640px) 300px, 240px"
+              className="object-cover"
+            />
           </FadeIn>
         </div>
       </div>
