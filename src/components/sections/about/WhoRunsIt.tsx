@@ -29,7 +29,7 @@ export default function WhoRunsIt() {
 
       <div className="relative z-10 mt-24">
         <FadeIn>
-          <div className="flex flex-col items-center gap-6 text-center sm:flex-row sm:items-center sm:text-left">
+          <div className="flex flex-col items-start gap-6 text-left sm:flex-row sm:items-center">
             <div className="h-40 w-40 shrink-0 overflow-hidden rounded-full sm:h-48 sm:w-48">
               <PlaceholderPhoto label="Founder photo — swap in real asset" />
             </div>
@@ -47,7 +47,7 @@ export default function WhoRunsIt() {
         <div className="mt-20 grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-3">
           {BOARD.map((member, i) => (
             <FadeIn key={i} delay={i * 120}>
-              <div className="flex flex-col items-center gap-4 text-center">
+              <div className="flex flex-col items-start gap-4 text-left">
                 <div className="aspect-square w-full max-w-[220px] overflow-hidden rounded-full">
                   <PlaceholderPhoto label="Board member photo — swap in real asset" />
                 </div>
