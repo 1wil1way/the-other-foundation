@@ -1,4 +1,4 @@
-import PlaceholderPhoto from "../../PlaceholderPhoto";
+import Image from "next/image";
 import FadeIn from "../../FadeIn";
 
 export default function NotSureYet() {
@@ -9,7 +9,13 @@ export default function NotSureYet() {
       <div className="pointer-events-none absolute right-0 top-1/2 hidden lg:block">
         <div className="absolute right-0 top-0 h-[1000px] w-[1000px] translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-coral" />
         <div className="absolute right-0 top-0 h-[820px] w-[820px] translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full">
-          <PlaceholderPhoto label="Meeting photo — swap in real asset" />
+          <Image
+            src="/images/photos/meeting.png"
+            alt="Members at a meeting"
+            fill
+            sizes="820px"
+            className="object-cover"
+          />
         </div>
       </div>
 
@@ -39,7 +45,13 @@ export default function NotSureYet() {
       {/* Mobile fallback — the offset-circle version above is hidden below lg */}
       <div className="relative z-10 mt-16 flex justify-center lg:hidden">
         <FadeIn className="relative aspect-square w-full max-w-[300px] overflow-hidden rounded-full border-[20px] border-brand-coral">
-          <PlaceholderPhoto label="Meeting photo — swap in real asset" />
+          <Image
+            src="/images/photos/meeting.png"
+            alt="Members at a meeting"
+            fill
+            sizes="300px"
+            className="object-cover"
+          />
         </FadeIn>
       </div>
     </section>
