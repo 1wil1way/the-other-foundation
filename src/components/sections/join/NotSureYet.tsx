@@ -7,14 +7,14 @@ export default function NotSureYet() {
       {/* Two circles sharing one center point (different sizes) so the rim
           reads as an uneven crescent, not a uniform border */}
       <div className="pointer-events-none absolute right-0 top-1/2 hidden lg:block">
-        <div className="absolute right-0 top-0 h-[1000px] w-[1000px] translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-coral" />
-        <div className="absolute right-0 top-0 h-[820px] w-[820px] translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full">
+        <div className="absolute right-0 top-0 h-[1100px] w-[1100px] translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-coral" />
+        <div className="absolute right-0 top-0 h-[900px] w-[900px] translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full">
           <Image
             src="/images/photos/meeting.png"
             alt="Members at a meeting"
             fill
-            sizes="820px"
-            className="object-cover object-[75%_30%]"
+            sizes="900px"
+            className="-scale-x-100 object-cover object-left"
           />
         </div>
       </div>
@@ -50,7 +50,7 @@ export default function NotSureYet() {
             alt="Members at a meeting"
             fill
             sizes="300px"
-            className="object-cover object-[75%_30%]"
+            className="-scale-x-100 object-cover object-left"
           />
         </FadeIn>
       </div>
