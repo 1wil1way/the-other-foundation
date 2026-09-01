@@ -14,7 +14,7 @@ export default function NotSureYet() {
             alt="Members at a meeting"
             fill
             sizes="820px"
-            className="object-cover"
+            className="object-cover object-[75%_30%]"
           />
         </div>
       </div>
@@ -50,7 +50,7 @@ export default function NotSureYet() {
             alt="Members at a meeting"
             fill
             sizes="300px"
-            className="object-cover"
+            className="object-cover object-[75%_30%]"
           />
         </FadeIn>
       </div>
