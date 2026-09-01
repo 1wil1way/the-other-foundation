@@ -15,7 +15,7 @@ export default function ReadyCTA() {
       </FadeIn>
       <FadeIn delay={300}>
         <a
-          href="/apply/start"
+          href="https://apply.otherfoundationbham.org/apply"
           className="mt-16 inline-flex items-center justify-center rounded-full bg-brand-coral px-10 py-5 text-center font-heading font-semibold text-white transition-all hover:scale-[1.02] hover:bg-brand-cream hover:text-brand-coral"
         >
           Go to the application

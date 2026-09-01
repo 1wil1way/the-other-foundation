@@ -12,6 +12,7 @@ const NAV_LINKS = [
 ];
 
 const FADE_DISTANCE = 240;
+const MEMBER_LOGIN_URL = "https://members.otherfoundationbham.org/login";
 
 export default function Header() {
   const [opacity, setOpacity] = useState(1);
@@ -53,12 +54,14 @@ export default function Header() {
 
           <span className="h-6 w-px bg-brand-cream/25" aria-hidden />
 
-          <Link
-            href="/login"
+          <a
+            href={MEMBER_LOGIN_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-base font-medium text-brand-cream/70 transition-colors hover:text-brand-cream"
           >
             Member login
-          </Link>
+          </a>
 
           <Link
             href="/join"
@@ -104,13 +107,15 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
-          <Link
-            href="/login"
+          <a
+            href={MEMBER_LOGIN_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setMenuOpen(false)}
             className="text-base font-medium text-brand-cream/70"
           >
             Member login
-          </Link>
+          </a>
         </nav>
       )}
     </header>

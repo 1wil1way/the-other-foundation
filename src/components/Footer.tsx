@@ -42,7 +42,7 @@ export default function Footer() {
             hello@theotherfoundation.org
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/otherfoundationbham/"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-colors hover:text-brand-cream"
@@ -50,7 +50,7 @@ export default function Footer() {
             Instagram
           </a>
           <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/otherfoundationbham/"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-colors hover:text-brand-cream"
