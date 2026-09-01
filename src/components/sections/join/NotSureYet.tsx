@@ -7,8 +7,8 @@ export default function NotSureYet() {
       {/* Two circles sharing one center point (different sizes) so the rim
           reads as an uneven crescent, not a uniform border */}
       <div className="pointer-events-none absolute right-0 top-1/2 hidden lg:block">
-        <div className="absolute right-0 top-0 h-[800px] w-[800px] translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-coral" />
-        <div className="absolute right-0 top-0 h-[640px] w-[640px] translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full">
+        <div className="absolute right-0 top-0 h-[1000px] w-[1000px] translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-coral" />
+        <div className="absolute right-0 top-0 h-[820px] w-[820px] translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full">
           <PlaceholderPhoto label="Meeting photo — swap in real asset" />
         </div>
       </div>
