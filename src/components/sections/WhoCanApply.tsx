@@ -25,8 +25,9 @@ export default function WhoCanApply() {
             <p className="mt-12 max-w-lg text-lg leading-relaxed text-brand-cream/90">
               You qualify as an individual or a community project. You do not
               need 501(c)(3) status. For-profit ventures do not qualify.
-              Awards are structured as gifts, so talk to a tax professional
-              about what that means for you.
+              Grants typically run $1,500 to $2,000. Awards are structured as
+              gifts, so talk to a tax professional about what that means for
+              you.
             </p>
           </FadeIn>
         </div>

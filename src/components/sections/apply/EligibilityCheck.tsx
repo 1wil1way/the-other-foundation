@@ -29,7 +29,7 @@ export default function EligibilityCheck() {
             <p className="mt-12 text-lg leading-relaxed text-brand-cream/90">
               Individuals, school groups, neighborhood efforts, and community
               projects with or without 501(c)(3) status can apply. Never
-              for-profit ventures.
+              for-profit ventures. Grants typically run $1,500 to $2,000.
             </p>
           </FadeIn>
         </div>
