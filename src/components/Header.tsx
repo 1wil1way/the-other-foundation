@@ -29,7 +29,7 @@ export default function Header() {
   return (
     <header
       style={{ opacity, pointerEvents: opacity === 0 ? "none" : "auto" }}
-      className="fixed inset-x-0 top-0 z-50 bg-brand-teal px-6 py-6 sm:px-10 lg:px-16"
+      className="fixed inset-x-0 top-0 z-50 rounded-b-3xl bg-brand-teal px-6 py-6 sm:px-10 lg:px-16"
     >
       <div className="flex items-center justify-between">
         <Link href="/">
