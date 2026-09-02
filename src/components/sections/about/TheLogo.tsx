@@ -11,20 +11,20 @@ export default function TheLogo() {
       <div className="relative z-10 grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
         <div className="max-w-xl">
           <FadeIn>
-            <div className="inline-block rounded-2xl bg-brand-teal px-8 py-6">
-              <Logo className="h-20 sm:h-28" />
-            </div>
-          </FadeIn>
-          <FadeIn delay={150}>
-            <h2 className="mt-10 font-heading text-4xl font-bold text-brand-teal sm:text-5xl">
+            <h2 className="font-heading text-4xl font-bold text-brand-teal sm:text-5xl">
               The logo.
             </h2>
           </FadeIn>
-          <FadeIn delay={300}>
+          <FadeIn delay={150}>
             <p className="mt-6 text-lg leading-relaxed text-brand-teal/80">
               The logo is the Storyteller fountain in Five Points South, used
               with permission from the estate of Frank Fleming.
             </p>
+          </FadeIn>
+          <FadeIn delay={300}>
+            <div className="mt-10 inline-block rounded-2xl bg-brand-teal px-8 py-6">
+              <Logo className="h-20 sm:h-28" />
+            </div>
           </FadeIn>
         </div>
 
