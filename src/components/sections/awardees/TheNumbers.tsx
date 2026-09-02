@@ -1,11 +1,10 @@
 import FadeIn from "../../FadeIn";
-import { AWARDEE_STATS, getVisibleAwardees } from "@/lib/awardees";
+import { AWARDEE_STATS, getMonthsRunning, getVisibleAwardees } from "@/lib/awardees";
 
 export default function TheNumbers() {
   const RESULTS = [
     { value: String(getVisibleAwardees().length), label: "Grants awarded to date" },
-    { value: AWARDEE_STATS.dollarsDistributed, label: "Distributed" },
-    { value: String(AWARDEE_STATS.monthsRunning), label: "Months running" },
+    { value: String(getMonthsRunning()), label: "Months running" },
   ];
 
   return (
@@ -16,7 +15,7 @@ export default function TheNumbers() {
         </h2>
       </FadeIn>
 
-      <div className="mt-20 grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-3">
+      <div className="mt-20 grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2">
         {RESULTS.map((stat, i) => (
           <FadeIn key={stat.label} delay={i * 120}>
             <p className="font-heading text-6xl font-bold text-brand-cream sm:text-7xl">

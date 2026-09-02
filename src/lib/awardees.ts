@@ -183,6 +183,15 @@ export function getRelatedAwardees(current: Awardee, count = 2): Awardee[] {
     .slice(0, count);
 }
 
+export function getMonthsRunning(): number {
+  const months = new Set(
+    getVisibleAwardees()
+      .map((a) => a.monthFunded)
+      .filter((m): m is string => Boolean(m)),
+  );
+  return months.size;
+}
+
 const UNDATED_LABEL = "Recently funded";
 
 export function groupByMonth(
@@ -202,10 +211,9 @@ export function groupByMonth(
 }
 
 // Editable stats for "The numbers" — update as real totals come in.
-// grantsAwardedToDate is computed from AWARDEES directly, not listed here.
+// grantsAwardedToDate and monthsRunning are computed from AWARDEES directly.
+// dollarsDistributed isn't tracked yet — add it back once real totals exist.
 export const AWARDEE_STATS = {
-  dollarsDistributed: "$0",
-  monthsRunning: 0,
   targetMonthly: "$10,000",
   targetMembers: 100,
 };

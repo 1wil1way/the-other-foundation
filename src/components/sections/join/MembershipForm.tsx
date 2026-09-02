@@ -31,8 +31,8 @@ export default function MembershipForm() {
             <p className="mt-12 text-lg leading-relaxed text-brand-cream/90">
               Enter your name, email, and phone number, then set up your
               recurring $100 monthly payment. Your membership starts as soon
-              as your payment is confirmed. Your next meeting is [date]. You
-              will receive an email with the meeting details and the
+              as your payment is confirmed. You will receive an email with
+              your next meeting date, the meeting details, and the
               applications to read beforehand.
             </p>
           </FadeIn>
