@@ -4,7 +4,7 @@ import FadeIn from "../../FadeIn";
 export default function MembershipIntro() {
   return (
     <section className="relative overflow-hidden bg-brand-teal px-6 py-32 sm:px-10 sm:py-44 lg:px-16">
-      <div className="absolute right-16 top-16 hidden h-64 w-64 overflow-hidden rounded-full sm:right-24 sm:block sm:h-80 sm:w-80">
+      <div className="absolute right-16 top-16 hidden h-64 w-64 overflow-hidden rounded-full border-[14px] border-brand-coral sm:right-24 sm:block sm:h-80 sm:w-80">
         <Image
           src="/images/photos/membership-intro.jpg"
           alt="A hundred dollar bill"
