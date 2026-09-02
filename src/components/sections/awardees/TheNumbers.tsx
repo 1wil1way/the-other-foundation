@@ -1,13 +1,13 @@
 import FadeIn from "../../FadeIn";
-import { AWARDEE_STATS } from "@/lib/awardees";
-
-const RESULTS = [
-  { value: String(AWARDEE_STATS.grantsAwardedToDate), label: "Grants awarded to date" },
-  { value: AWARDEE_STATS.dollarsDistributed, label: "Distributed" },
-  { value: String(AWARDEE_STATS.monthsRunning), label: "Months running" },
-];
+import { AWARDEE_STATS, getVisibleAwardees } from "@/lib/awardees";
 
 export default function TheNumbers() {
+  const RESULTS = [
+    { value: String(getVisibleAwardees().length), label: "Grants awarded to date" },
+    { value: AWARDEE_STATS.dollarsDistributed, label: "Distributed" },
+    { value: String(AWARDEE_STATS.monthsRunning), label: "Months running" },
+  ];
+
   return (
     <section className="bg-brand-teal px-6 py-32 sm:px-10 sm:py-44 lg:px-16">
       <FadeIn>

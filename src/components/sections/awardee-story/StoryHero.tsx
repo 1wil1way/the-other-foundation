@@ -37,6 +37,18 @@ export default function StoryHero({ awardee }: { awardee: Awardee }) {
             {awardee.recipientName}
           </p>
         </FadeIn>
+        {awardee.outboundLink && (
+          <FadeIn delay={250}>
+            <a
+              href={awardee.outboundLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-block font-heading text-sm font-semibold text-brand-coral underline decoration-brand-coral/40 underline-offset-4 transition-colors hover:text-brand-cream"
+            >
+              Visit their site →
+            </a>
+          </FadeIn>
+        )}
       </div>
     </section>
   );

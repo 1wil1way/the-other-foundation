@@ -60,7 +60,7 @@ export default async function AwardeeStoryPage({
       <StorySection heading="What they built." body={awardee.whatTheyBuilt} theme="coral" />
       <StorySection heading="What happened next." body={awardee.whatHappenedNext} theme="teal" />
       <Interview interview={awardee.interview} />
-      <Quote text={awardee.quote} />
+      {awardee.quote && <Quote text={awardee.quote} />}
       <WhatsNext />
       <RelatedAwardees month={awardee.monthFunded} related={related} />
     </div>
