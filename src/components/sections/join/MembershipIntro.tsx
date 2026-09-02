@@ -1,11 +1,17 @@
+import Image from "next/image";
 import FadeIn from "../../FadeIn";
-import PlaceholderPhoto from "../../PlaceholderPhoto";
 
 export default function MembershipIntro() {
   return (
     <section className="relative overflow-hidden bg-brand-teal px-6 py-32 sm:px-10 sm:py-44 lg:px-16">
       <div className="absolute right-16 top-16 hidden h-64 w-64 overflow-hidden rounded-full sm:right-24 sm:block sm:h-80 sm:w-80">
-        <PlaceholderPhoto label="Photo — swap in real asset" />
+        <Image
+          src="/images/photos/membership-intro.jpg"
+          alt="A hundred dollar bill"
+          fill
+          sizes="320px"
+          className="object-cover"
+        />
       </div>
 
       <div className="relative z-10 max-w-2xl">
