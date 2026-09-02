@@ -14,7 +14,6 @@ export default function Hero() {
       >
         <source src="/videos/hero.mp4" type="video/mp4" />
       </video>
-      <div className="absolute inset-0 bg-brand-teal/75" />
 
       <div className="relative z-10 flex flex-1 flex-col">
         <main className="flex flex-1 flex-col justify-center px-6 pt-32 sm:px-10 sm:pt-40 lg:px-16">
