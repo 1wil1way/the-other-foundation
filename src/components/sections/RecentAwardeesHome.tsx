@@ -10,7 +10,7 @@ export default function RecentAwardeesHome() {
     <section className="bg-brand-cream px-6 py-24 sm:px-10 lg:px-16">
       <FadeIn>
         <h2 className="font-heading text-4xl font-bold text-brand-teal sm:text-5xl">
-          Last month, our members funded these.
+          The <span className="text-brand-coral">other</span> awardees.
         </h2>
       </FadeIn>
 
