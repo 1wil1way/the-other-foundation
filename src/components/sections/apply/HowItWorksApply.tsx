@@ -10,11 +10,11 @@ export default function HowItWorksApply() {
       />
       <div className="absolute right-16 top-20 hidden h-64 w-64 overflow-hidden rounded-full sm:right-28 sm:block sm:h-80 sm:w-80">
         <Image
-          src="/images/photos/how-it-works.jpg"
-          alt="Members taking notes at a meeting table"
+          src="/images/photos/good-news.jpg"
+          alt="A man smiling"
           fill
           sizes="320px"
-          className="object-cover object-[30%_35%]"
+          className="object-cover object-[40%_35%]"
         />
       </div>
 
