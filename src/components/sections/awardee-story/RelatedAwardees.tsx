@@ -7,7 +7,7 @@ export default function RelatedAwardees({
   month,
   related,
 }: {
-  month: string;
+  month?: string;
   related: Awardee[];
 }) {
   if (related.length === 0) return null;
@@ -16,7 +16,7 @@ export default function RelatedAwardees({
     <section className="bg-brand-teal px-6 py-28 sm:px-10 sm:py-36 lg:px-16">
       <FadeIn>
         <h2 className="font-heading text-2xl font-semibold text-brand-cream">
-          More from {month}
+          {month ? `More from ${month}` : "More awardees"}
         </h2>
       </FadeIn>
 

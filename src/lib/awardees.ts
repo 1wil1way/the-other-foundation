@@ -9,8 +9,8 @@ export type Awardee = {
   slug: string;
   projectName: string;
   recipientName: string;
-  /** e.g. "August 2026" — used for grouping and display. */
-  monthFunded: string;
+  /** e.g. "August 2026" — used for grouping and display. Leave unset until the real date is known. */
+  monthFunded?: string;
   /** Optional — only set if the amount is disclosable. */
   amount?: string;
   /** One line, shown in the list view. */
@@ -31,14 +31,13 @@ export type Awardee = {
 };
 
 // Transcribed from the campaign interview video (public/videos/interview.mp4).
-// monthFunded is a placeholder — swap in the real funded month once known.
+// monthFunded is left unset until the real funded month is known.
 // No photos yet — replace photos: [] as pictures come in.
 export const AWARDEES: Awardee[] = [
   {
     slug: "grayson-valley-free-food-pantry",
     projectName: "Grayson Valley Free Food Pantry",
     recipientName: "Amanda Williams",
-    monthFunded: "September 2026",
     shortDescription: "A free, always-stocked food pantry for neighbors in Grayson Valley.",
     whatTheySaw: "Families nearby needed easier, no-questions-asked access to groceries close to home.",
     whatTheyBuilt: "The Grayson Valley Free Food Pantry — a stocked, always-open pantry box for the neighborhood.",
@@ -54,7 +53,6 @@ export const AWARDEES: Awardee[] = [
     slug: "jubilee-orchard-community-garden",
     projectName: "Jubilee Orchard Community Garden",
     recipientName: "Dr. Amanda Clark",
-    monthFunded: "September 2026",
     shortDescription: "A community garden in North Titusville building food access and neighborhood stewardship.",
     whatTheySaw: "North Titusville needed a shared green space — somewhere for food access, beautification, and neighbors to gather and heal together.",
     whatTheyBuilt: "The Jubilee Orchard Community Garden: a peaceful site for reconciliation and education, working toward community food sovereignty in the neighborhood.",
@@ -70,7 +68,6 @@ export const AWARDEES: Awardee[] = [
     slug: "the-way-out-program",
     projectName: "The Way Out Program",
     recipientName: "Jessic Evans",
-    monthFunded: "September 2026",
     shortDescription: "A 12-week life-coaching rehabilitation program reducing barriers to homelessness and relapse.",
     whatTheySaw: "People coming out of hard circumstances needed more than a program — they needed tools to make better decisions and build stability.",
     whatTheyBuilt: "The Way Out Program (TWOP): a 12-week life-coaching rehabilitation program that helps reduce homelessness, relapse, and recidivism.",
@@ -100,16 +97,19 @@ export function getRelatedAwardees(current: Awardee, count = 2): Awardee[] {
     .slice(0, count);
 }
 
+const UNDATED_LABEL = "Recently funded";
+
 export function groupByMonth(
   awardees: Awardee[],
 ): { month: string; entries: Awardee[] }[] {
   const groups: { month: string; entries: Awardee[] }[] = [];
   for (const awardee of awardees) {
-    const group = groups.find((g) => g.month === awardee.monthFunded);
+    const month = awardee.monthFunded ?? UNDATED_LABEL;
+    const group = groups.find((g) => g.month === month);
     if (group) {
       group.entries.push(awardee);
     } else {
-      groups.push({ month: awardee.monthFunded, entries: [awardee] });
+      groups.push({ month, entries: [awardee] });
     }
   }
   return groups;
