@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Logo() {
+export default function Logo({ className = "h-16 sm:h-20" }: { className?: string }) {
   return (
     <Image
       src="/images/logo.png"
@@ -8,7 +8,7 @@ export default function Logo() {
       width={308}
       height={126}
       priority
-      className="h-16 w-auto sm:h-20"
+      className={`w-auto ${className}`}
     />
   );
 }
