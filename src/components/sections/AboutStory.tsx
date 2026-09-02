@@ -27,11 +27,11 @@ export default function AboutStory() {
         <div className="relative mx-auto h-[420px] w-full max-w-[520px] sm:h-[560px]">
           <FadeIn className="absolute right-0 top-0 h-[340px] w-[340px] overflow-hidden rounded-full border-[14px] border-brand-teal sm:h-[400px] sm:w-[400px]">
             <Image
-              src="/images/photos/classroom.jpg"
+              src="/images/photos/bus-driver.jpg"
               alt="A bus driver at the wheel"
               fill
               sizes="(min-width: 640px) 400px, 340px"
-              className="object-cover"
+              className="object-cover object-[40%_35%]"
             />
           </FadeIn>
           <FadeIn
