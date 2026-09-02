@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import FadeIn from "../FadeIn";
+import AwardeePlaceholder from "../AwardeePlaceholder";
 import { getVisibleAwardees } from "@/lib/awardees";
 
 export default function RecentAwardeesHome() {
@@ -18,8 +19,8 @@ export default function RecentAwardeesHome() {
         {cards.map((awardee, i) => (
           <FadeIn key={awardee.slug} delay={i * 120}>
             <Link href={`/awardees/${awardee.slug}`} className="group block">
-              {awardee.photos[0] && (
-                <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl">
+              <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl">
+                {awardee.photos[0] ? (
                   <Image
                     src={awardee.photos[0]}
                     alt=""
@@ -27,11 +28,11 @@ export default function RecentAwardeesHome() {
                     height={300}
                     className="h-full w-full object-cover transition-transform group-hover:scale-[1.03]"
                   />
-                </div>
-              )}
-              <p
-                className={`font-heading text-lg font-semibold text-brand-teal ${awardee.photos[0] ? "mt-5" : ""}`}
-              >
+                ) : (
+                  <AwardeePlaceholder logoClassName="h-10" />
+                )}
+              </div>
+              <p className="mt-5 font-heading text-lg font-semibold text-brand-teal">
                 {awardee.projectName}
               </p>
               <p className="mt-1 text-sm font-medium text-brand-coral">

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import FadeIn from "../../FadeIn";
+import AwardeePlaceholder from "../../AwardeePlaceholder";
 import type { Awardee } from "@/lib/awardees";
 
 export default function RelatedAwardees({
@@ -27,8 +28,8 @@ export default function RelatedAwardees({
               href={`/awardees/${awardee.slug}`}
               className="group flex items-center gap-5 transition-opacity hover:opacity-80"
             >
-              {awardee.photos[0] && (
-                <div className="h-20 w-20 shrink-0 overflow-hidden rounded-full">
+              <div className="h-20 w-20 shrink-0 overflow-hidden rounded-full">
+                {awardee.photos[0] ? (
                   <Image
                     src={awardee.photos[0]}
                     alt=""
@@ -36,8 +37,10 @@ export default function RelatedAwardees({
                     height={80}
                     className="h-full w-full object-cover"
                   />
-                </div>
-              )}
+                ) : (
+                  <AwardeePlaceholder tone="coral" logoClassName="h-6" />
+                )}
+              </div>
               <div>
                 <p className="font-heading text-lg font-semibold text-brand-cream">
                   {awardee.projectName}

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import FadeIn from "../../FadeIn";
+import AwardeePlaceholder from "../../AwardeePlaceholder";
 import { getVisibleAwardees, groupByMonth } from "@/lib/awardees";
 
 export default function RecentGrants() {
@@ -38,8 +39,8 @@ export default function RecentGrants() {
                     href={`/awardees/${awardee.slug}`}
                     className="group flex items-center gap-6 py-6 transition-opacity hover:opacity-70"
                   >
-                    {awardee.photos[0] && (
-                      <div className="h-16 w-16 shrink-0 overflow-hidden rounded-full">
+                    <div className="h-16 w-16 shrink-0 overflow-hidden rounded-full">
+                      {awardee.photos[0] ? (
                         <Image
                           src={awardee.photos[0]}
                           alt=""
@@ -47,8 +48,10 @@ export default function RecentGrants() {
                           height={64}
                           className="h-full w-full object-cover"
                         />
-                      </div>
-                    )}
+                      ) : (
+                        <AwardeePlaceholder logoClassName="h-5" />
+                      )}
+                    </div>
 
                     <div className="min-w-0 flex-1">
                       <p className="font-heading text-lg font-semibold text-brand-teal">
