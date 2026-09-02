@@ -6,7 +6,7 @@ const PANELS = [
     heading: "A vote, a room full of neighbors, a handshake.",
     button: "Become a member",
     href: "/join",
-    photoSrc: "/images/split-left.jpg",
+    photoSrc: "/images/photos/meeting-notes.jpg",
   },
   {
     heading: "Individuals and community projects welcome.",
