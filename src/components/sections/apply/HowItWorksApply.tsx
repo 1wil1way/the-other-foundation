@@ -1,5 +1,5 @@
+import Image from "next/image";
 import FadeIn from "../../FadeIn";
-import PlaceholderPhoto from "../../PlaceholderPhoto";
 
 export default function HowItWorksApply() {
   return (
@@ -9,7 +9,13 @@ export default function HowItWorksApply() {
         className="pointer-events-none absolute -right-24 -bottom-24 h-[560px] w-[560px] translate-x-1/4 translate-y-1/4 rounded-full bg-brand-coral sm:h-[680px] sm:w-[680px]"
       />
       <div className="absolute right-16 top-20 hidden h-64 w-64 overflow-hidden rounded-full sm:right-28 sm:block sm:h-80 sm:w-80">
-        <PlaceholderPhoto label="Photo — swap in real asset" />
+        <Image
+          src="/images/photos/how-it-works.jpg"
+          alt="Members taking notes at a meeting table"
+          fill
+          sizes="320px"
+          className="object-cover object-[30%_35%]"
+        />
       </div>
 
       <div className="relative z-10 max-w-2xl">
