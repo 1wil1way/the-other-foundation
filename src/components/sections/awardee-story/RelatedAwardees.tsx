@@ -27,8 +27,8 @@ export default function RelatedAwardees({
               href={`/awardees/${awardee.slug}`}
               className="group flex items-center gap-5 transition-opacity hover:opacity-80"
             >
-              <div className="h-20 w-20 shrink-0 overflow-hidden rounded-full">
-                {awardee.photos[0] ? (
+              {awardee.photos[0] && (
+                <div className="h-20 w-20 shrink-0 overflow-hidden rounded-full">
                   <Image
                     src={awardee.photos[0]}
                     alt=""
@@ -36,14 +36,8 @@ export default function RelatedAwardees({
                     height={80}
                     className="h-full w-full object-cover"
                   />
-                ) : (
-                  <div className="flex h-full w-full items-center justify-center bg-brand-coral">
-                    <span className="font-heading text-2xl font-bold text-white">
-                      {awardee.projectName.charAt(0)}
-                    </span>
-                  </div>
-                )}
-              </div>
+                </div>
+              )}
               <div>
                 <p className="font-heading text-lg font-semibold text-brand-cream">
                   {awardee.projectName}

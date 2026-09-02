@@ -18,8 +18,8 @@ export default function RecentAwardeesHome() {
         {cards.map((awardee, i) => (
           <FadeIn key={awardee.slug} delay={i * 120}>
             <Link href={`/awardees/${awardee.slug}`} className="group block">
-              <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl">
-                {awardee.photos[0] ? (
+              {awardee.photos[0] && (
+                <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl">
                   <Image
                     src={awardee.photos[0]}
                     alt=""
@@ -27,15 +27,11 @@ export default function RecentAwardeesHome() {
                     height={300}
                     className="h-full w-full object-cover transition-transform group-hover:scale-[1.03]"
                   />
-                ) : (
-                  <div className="flex h-full w-full items-center justify-center bg-brand-teal">
-                    <span className="font-heading text-4xl font-bold text-brand-cream">
-                      {awardee.projectName.charAt(0)}
-                    </span>
-                  </div>
-                )}
-              </div>
-              <p className="mt-5 font-heading text-lg font-semibold text-brand-teal">
+                </div>
+              )}
+              <p
+                className={`font-heading text-lg font-semibold text-brand-teal ${awardee.photos[0] ? "mt-5" : ""}`}
+              >
                 {awardee.projectName}
               </p>
               <p className="mt-1 text-sm font-medium text-brand-coral">

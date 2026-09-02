@@ -38,8 +38,8 @@ export default function RecentGrants() {
                     href={`/awardees/${awardee.slug}`}
                     className="group flex items-center gap-6 py-6 transition-opacity hover:opacity-70"
                   >
-                    <div className="h-16 w-16 shrink-0 overflow-hidden rounded-full">
-                      {awardee.photos[0] ? (
+                    {awardee.photos[0] && (
+                      <div className="h-16 w-16 shrink-0 overflow-hidden rounded-full">
                         <Image
                           src={awardee.photos[0]}
                           alt=""
@@ -47,14 +47,8 @@ export default function RecentGrants() {
                           height={64}
                           className="h-full w-full object-cover"
                         />
-                      ) : (
-                        <div className="flex h-full w-full items-center justify-center bg-brand-teal">
-                          <span className="font-heading text-xl font-bold text-brand-cream">
-                            {awardee.projectName.charAt(0)}
-                          </span>
-                        </div>
-                      )}
-                    </div>
+                      </div>
+                    )}
 
                     <div className="min-w-0 flex-1">
                       <p className="font-heading text-lg font-semibold text-brand-teal">
