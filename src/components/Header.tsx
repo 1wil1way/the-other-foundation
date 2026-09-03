@@ -30,11 +30,11 @@ export default function Header() {
   return (
     <header
       style={{ opacity, pointerEvents: opacity === 0 ? "none" : "auto" }}
-      className="fixed inset-x-0 top-0 z-50 rounded-b-3xl bg-brand-teal px-6 py-6 sm:px-10 lg:px-16"
+      className="fixed inset-x-0 top-0 z-50 rounded-b-3xl bg-brand-teal px-6 py-3 sm:px-10 lg:px-16"
     >
       <div className="flex items-center justify-between">
         <Link href="/">
-          <Logo />
+          <Logo className="h-10 sm:h-12" />
         </Link>
 
         <nav className="hidden items-center gap-10 font-heading text-lg font-medium md:flex">
