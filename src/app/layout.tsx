@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://the-other-foundation.vercel.app"),
+  metadataBase: new URL("https://otherfoundationbham.org"),
   title: "The Other Foundation",
   description:
     "Every month, somebody in Birmingham gets funded, and our members decide who.",
